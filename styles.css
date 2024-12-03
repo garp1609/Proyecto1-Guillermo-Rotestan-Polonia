@@ -1,0 +1,57 @@
+/* Estilos animados y color degradado */
+body {
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar, .footer {
+    background-color: #1e3c72;
+    border-bottom: 2px solid white;
+}
+
+.navbar-brand, .footer p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    animation: colorChange 4s infinite alternate;
+}
+
+@keyframes colorChange {
+    0% { color: #1e90ff; }
+    100% { color: #87cefa; }
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-header {
+    background: linear-gradient(to right, #1e90ff, #87cefa);
+}
+
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+}
+
+.btn-primary:hover, .btn-success:hover, .btn-warning:hover, .btn-danger:hover {
+    transform: scale(1.05);
+}
+
+#list-table td {
+    transition: all 0.3s ease;
+}
+
+#list-table td:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 128, 128, 0.1);
+}
+
+/* Estilos del footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3c72;
+    color: white;
+    border-top: 2px solid white;
+}
